@@ -1,0 +1,29 @@
+<div class="flex">
+    <div class="p-4 w-1/4 h-screen bg-slate-100"> 
+
+       <h2> render search bar</h2>
+
+        <h2> Lists Tabs </h2>
+    
+    </div>
+
+    <div class="py-2 px-4 h-screen w-screen overflow-auto pg-grey-100">
+        <h1>Welcome to your ToDo List</h1>
+        <div class="flex justify-between border-b">
+        </div>
+    
+        <div id="tasks">
+            <h1 class="font-bold text-lg mb-7">Tasks</h1>
+
+        <div class="px-5" data-controller="tasks">
+            <%= render @tasks %>
+        </div>
+        </div>
+
+        <div class="mt-4">
+            <%= render "form", task: @task %>
+        </div>
+
+    </div>
+
+</div>
